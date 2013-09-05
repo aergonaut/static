@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+body {
+  margin: 0 1em;
+  width: 960px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+table {
+  margin-left: 2em;
+}
+
+thead tr {
+  background-color: #eee;
+}
+
+td, th {
+  padding: 5px;
+}

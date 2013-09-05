@@ -51,6 +51,9 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+set :markdown, :tables => true, :no_instra_emphasis => true
+set :markdown_engine, :redcarpet
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
