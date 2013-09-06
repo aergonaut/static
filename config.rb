@@ -54,6 +54,14 @@ set :images_dir, 'images'
 set :markdown, :tables => true, :no_instra_emphasis => true
 set :markdown_engine, :redcarpet
 
+activate :s3_sync do |s3|
+  s3.bucket = "static.aergonaut.com"
+  s3.region = "us-east-1"
+  s3.delete = true
+  s3.after_build = true
+  s3.prefer_gzip = true
+end
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
