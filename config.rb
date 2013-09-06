@@ -58,7 +58,7 @@ activate :s3_sync do |s3|
   s3.bucket = "static.aergonaut.com"
   s3.region = "us-east-1"
   s3.delete = true
-  s3.after_build = true
+  s3.after_build = false # no hook for now
   s3.prefer_gzip = true
 end
 
