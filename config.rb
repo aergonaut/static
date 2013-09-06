@@ -51,7 +51,7 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
-set :markdown, :tables => true, :no_instra_emphasis => true
+set :markdown, :tables => true, :no_intra_emphasis => true
 set :markdown_engine, :redcarpet
 
 activate :s3_sync do |s3|
