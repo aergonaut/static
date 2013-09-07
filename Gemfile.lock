@@ -1,3 +1,16 @@
+GIT
+  remote: git://github.com/fredjean/middleman-s3_sync.git
+  revision: d324c02ce4de108346cdc6d6815e551b2f436897
+  ref: d324c02ce4de108346cdc6d6815e551b2f436897
+  specs:
+    middleman-s3_sync (3.0.16)
+      colorize
+      fog
+      map
+      middleman-core (>= 3.0.0)
+      pmap
+      ruby-progressbar
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -72,13 +85,6 @@ GEM
       multi_json (~> 1.0)
       rack-livereload
     middleman-more (3.1.4)
-    middleman-s3_sync (3.0.16)
-      colorize
-      fog
-      map
-      middleman-core (>= 3.0.0)
-      pmap
-      ruby-progressbar
     middleman-sprockets (3.1.4)
       middleman-core (>= 3.0.14)
       middleman-more (>= 3.0.14)
@@ -131,7 +137,7 @@ PLATFORMS
 DEPENDENCIES
   middleman (~> 3.1.4)
   middleman-livereload (~> 3.1.0)
-  middleman-s3_sync
+  middleman-s3_sync!
   redcarpet
   ruby18_source_location
   wdm (~> 0.1.0)
