@@ -51,8 +51,10 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
-set :markdown, :tables => true, :no_intra_emphasis => true
+set :markdown, tables: true, no_intra_emphasis: true, fenced_code_blocks: true
 set :markdown_engine, :redcarpet
+
+set :haml, attr_wrapper: '"'
 
 activate :s3_sync do |s3|
   s3.bucket = "static.aergonaut.com"
@@ -65,13 +67,13 @@ end
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
-  # activate :minify_css
+  activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
 
   # Enable cache buster
-  # activate :asset_hash
+  activate :asset_hash
 
   # Use relative URLs
   # activate :relative_assets

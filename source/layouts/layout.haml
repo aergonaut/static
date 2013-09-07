@@ -7,6 +7,6 @@
     %title= current_page.data.title || "The Middleman"
 
     = stylesheet_link_tag "normalize", "all"
-  %body
+  %body{ class: current_page.data.page_class.try(:join, " ") }
     = yield
     = javascript_include_tag "all"
