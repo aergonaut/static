@@ -51,8 +51,7 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
-set :markdown, tables: true, no_intra_emphasis: true, fenced_code_blocks: true
-set :markdown_engine, :redcarpet
+set :markdown_engine, :kramdown
 
 set :haml, attr_wrapper: '"'
 

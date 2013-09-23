@@ -15,6 +15,7 @@ platforms :mri_18 do
   gem "ruby18_source_location"
 end
 
-gem "redcarpet"
+# gem "redcarpet"
+gem "kramdown"
 
 gem "middleman-s3_sync", github: "fredjean/middleman-s3_sync", ref: "d324c02ce4de108346cdc6d6815e551b2f436897"
